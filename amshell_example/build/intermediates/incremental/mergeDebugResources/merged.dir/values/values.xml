@@ -8,7 +8,10 @@
         <item>en</item>
         <item>ru</item>
     </string-array>
-    <dimen name="ambilwarna_satudp">1dp</dimen>
+    <dimen name="ambilwarna_hsvHeight">240dp</dimen>
+    <dimen name="ambilwarna_hsvWidth">240dp</dimen>
+    <dimen name="ambilwarna_hueWidth">30dp</dimen>
+    <dimen name="ambilwarna_spacer">8dp</dimen>
     <string formatted="false" name="CANCEL_CMD">Cancel</string>
     <string formatted="false" name="EDIT_MANIFEST_CMD">Edit manifest</string>
     <string formatted="false" name="PREF_BACKGROUND">Background</string>
@@ -51,4 +54,5 @@
     <string name="_RESOLUTION_SEPARATOR">x</string>
     <string name="app_name">PPMPortable</string>
     <style name="Theme.Device.Light" parent="@android:style/Theme.Light"/>
+    <declare-styleable name="AmbilWarnaPreference"><attr format="boolean" name="supportsAlpha"/></declare-styleable>
 </resources>

@@ -49,10 +49,12 @@ import javax.microedition.param.DataContainer;
 import javax.microedition.param.DataEditor;
 import javax.microedition.param.SharedPreferencesContainer;
 import javax.microedition.util.ContextHolder;
-import yuku.ambilwarna.AmbilWarnaDialog;
-/* change this import */
 
-public class ConfigActivity extends MicroActivity implements CommandListener, View.OnKeyListener, View.OnClickListener
+import yuku.ambilwarna.AmbilWarnaDialog;
+
+public class ConfigActivity
+		extends MicroActivity
+		implements CommandListener, View.OnKeyListener, View.OnClickListener
 {
 	protected XMLForm form;
 	

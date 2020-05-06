@@ -5,6 +5,8 @@ android {
 
     defaultConfig {
         applicationId "com.annimon.midedit"
+
+        minSdkVersion 10
     }
 
     buildTypes {
@@ -13,4 +15,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+}
+dependencies {
+    def ambilwarnaVersion = "2.0.1"
+
+    // https://github.com/yukuku/ambilwarna
+    implementation "com.github.yukuku:ambilwarna:$ambilwarnaVersion"
 }
