@@ -11,50 +11,50 @@
 9-->[com.github.yukuku:ambilwarna:2.0.1] C:\Dependencies\.gradle\caches\transforms-2\files-2.1\1723e2fc18497df90d78ab2c40723e49\ambilwarna-2.0.1\AndroidManifest.xml:10:9-38
 10
 11    <uses-permission android:name="android.permission.VIBRATE" />
-11-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:4:5-66
-11-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:4:22-63
+11-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:5:5-66
+11-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:5:22-63
 12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-12-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:5:5-81
-12-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:5:22-78
+12-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:6:5-81
+12-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:6:22-78
 13
 14    <application
-14-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:6:5-15:19
+14-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:8:5-17:19
 15        android:name="main.Main"
-15-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:6:114-138
+15-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:8:114-138
 16        android:allowBackup="true"
-16-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:6:196-222
+16-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:8:196-222
 17        android:allowClearUserData="true"
-17-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:6:139-172
+17-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:8:139-172
 18        android:debuggable="true"
 19        android:hasCode="true"
-19-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:6:173-195
+19-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:8:173-195
 20        android:icon="@drawable/icon"
-20-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:6:84-113
+20-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:8:84-113
 21        android:label="MidEdit"
-21-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:6:60-83
+21-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:8:60-83
 22        android:testOnly="true"
 23        android:theme="@style/Theme.Device.Light" >
-23-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:6:18-59
+23-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:8:18-59
 24        <activity android:name="javax.microedition.shell.ConfigActivity" >
-24-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:7:9-12:20
-24-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:7:19-73
+24-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:9:9-14:20
+24-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:9:19-73
 25            <intent-filter>
-25-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:8:13-11:29
+25-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:10:13-13:29
 26                <action android:name="android.intent.action.MAIN" />
-26-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:9:17-69
-26-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:9:25-66
+26-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:11:17-69
+26-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:11:25-66
 27
 28                <category android:name="android.intent.category.LAUNCHER" />
-28-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:10:17-77
-28-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:10:27-74
+28-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:12:17-77
+28-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:12:27-74
 29            </intent-filter>
 30        </activity>
 31        <activity android:name="javax.microedition.lcdui.Display$ScreenActivity" />
-31-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:13:9-84
-31-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:13:19-81
+31-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:15:9-84
+31-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:15:19-81
 32        <activity android:name="javax.microedition.lcdui.Display$CanvasActivity" />
-32-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:14:9-84
-32-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:14:19-81
+32-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:16:9-84
+32-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:16:19-81
 33    </application>
 34
 35</manifest>

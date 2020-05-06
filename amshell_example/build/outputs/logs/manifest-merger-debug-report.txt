@@ -1,13 +1,13 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:2:1-16:12
+ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:2:1-18:12
+INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:2:1-18:12
+INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:2:1-18:12
+INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:2:1-18:12
 MERGED from [com.github.yukuku:ambilwarna:2.0.1] C:\Dependencies\.gradle\caches\transforms-2\files-2.1\1723e2fc18497df90d78ab2c40723e49\ambilwarna-2.0.1\AndroidManifest.xml:2:1-12:12
-INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:2:1-16:12
+INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:2:1-18:12
+INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:2:1-18:12
+INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:2:1-18:12
 	package
 		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:2:59-88
 		INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml
@@ -23,51 +23,51 @@ INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidMan
 		INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml
 		INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml
 uses-permission#android.permission.VIBRATE
-ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:4:5-66
+ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:5:5-66
 	android:name
-		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:4:22-63
+		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:5:22-63
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:5:5-81
+ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:6:5-81
 	android:name
-		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:5:22-78
+		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:6:22-78
 application
-ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:6:5-15:19
+ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:8:5-17:19
 	android:label
-		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:6:60-83
+		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:8:60-83
 	android:hasCode
-		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:6:173-195
+		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:8:173-195
 	android:allowClearUserData
-		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:6:139-172
+		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:8:139-172
 	android:icon
-		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:6:84-113
+		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:8:84-113
 	android:allowBackup
-		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:6:196-222
+		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:8:196-222
 	android:theme
-		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:6:18-59
+		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:8:18-59
 	android:name
-		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:6:114-138
+		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:8:114-138
 activity#javax.microedition.shell.ConfigActivity
-ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:7:9-12:20
+ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:9:9-14:20
 	android:name
-		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:7:19-73
+		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:9:19-73
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:8:13-11:29
+ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:10:13-13:29
 action#android.intent.action.MAIN
-ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:9:17-69
+ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:11:17-69
 	android:name
-		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:9:25-66
+		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:11:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:10:17-77
+ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:12:17-77
 	android:name
-		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:10:27-74
+		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:12:27-74
 activity#javax.microedition.lcdui.Display$ScreenActivity
-ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:13:9-84
+ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:15:9-84
 	android:name
-		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:13:19-81
+		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:15:19-81
 activity#javax.microedition.lcdui.Display$CanvasActivity
-ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:14:9-84
+ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:16:9-84
 	android:name
-		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:14:19-81
+		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:16:19-81
 uses-sdk
 INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml
