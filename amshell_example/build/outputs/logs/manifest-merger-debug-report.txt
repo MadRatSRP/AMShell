@@ -4,7 +4,7 @@ ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManife
 INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:2:1-18:12
 INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:2:1-18:12
 INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:2:1-18:12
-MERGED from [com.github.MadRatSRP:AMShell:v1.0] C:\Dependencies\.gradle\caches\transforms-2\files-2.1\95afaf23182ddf3cc87282a3413d39a2\AMShell-v1.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.MadRatSRP:AMShell:1.0] C:\Dependencies\.gradle\caches\transforms-2\files-2.1\95afaf23182ddf3cc87282a3413d39a2\AMShell-v1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.yukuku:ambilwarna:2.0.1] C:\Dependencies\.gradle\caches\transforms-2\files-2.1\1723e2fc18497df90d78ab2c40723e49\ambilwarna-2.0.1\AndroidManifest.xml:2:1-12:12
 INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:2:1-18:12
 INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:2:1-18:12
@@ -72,13 +72,13 @@ ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManife
 uses-sdk
 INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml
-MERGED from [com.github.MadRatSRP:AMShell:v1.0] C:\Dependencies\.gradle\caches\transforms-2\files-2.1\95afaf23182ddf3cc87282a3413d39a2\AMShell-v1.0\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.MadRatSRP:AMShell:v1.0] C:\Dependencies\.gradle\caches\transforms-2\files-2.1\95afaf23182ddf3cc87282a3413d39a2\AMShell-v1.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.MadRatSRP:AMShell:1.0] C:\Dependencies\.gradle\caches\transforms-2\files-2.1\95afaf23182ddf3cc87282a3413d39a2\AMShell-v1.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.MadRatSRP:AMShell:1.0] C:\Dependencies\.gradle\caches\transforms-2\files-2.1\95afaf23182ddf3cc87282a3413d39a2\AMShell-v1.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.yukuku:ambilwarna:2.0.1] C:\Dependencies\.gradle\caches\transforms-2\files-2.1\1723e2fc18497df90d78ab2c40723e49\ambilwarna-2.0.1\AndroidManifest.xml:8:5-10:41
 MERGED from [com.github.yukuku:ambilwarna:2.0.1] C:\Dependencies\.gradle\caches\transforms-2\files-2.1\1723e2fc18497df90d78ab2c40723e49\ambilwarna-2.0.1\AndroidManifest.xml:8:5-10:41
 INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		ADDED from [com.github.MadRatSRP:AMShell:v1.0] C:\Dependencies\.gradle\caches\transforms-2\files-2.1\95afaf23182ddf3cc87282a3413d39a2\AMShell-v1.0\AndroidManifest.xml:9:9-38
+		ADDED from [com.github.MadRatSRP:AMShell:1.0] C:\Dependencies\.gradle\caches\transforms-2\files-2.1\95afaf23182ddf3cc87282a3413d39a2\AMShell-v1.0\AndroidManifest.xml:9:9-38
 	android:minSdkVersion
 		INJECTED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml
 		ADDED from C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml

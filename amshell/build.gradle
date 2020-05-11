@@ -1,14 +1,10 @@
 apply plugin: 'com.android.library'
 
 android {
-    // Поменяем это
     compileSdkVersion 15
-
-    buildToolsVersion "29.0.2" // эту строку убираем
 
     defaultConfig {
         minSdkVersion 15
-        // И это
         targetSdkVersion 15
         versionCode 1
         versionName "1.0"

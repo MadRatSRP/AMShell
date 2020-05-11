@@ -1,12 +1,12 @@
 <component name="libraryTable">
-  <library name="Gradle: com.github.MadRatSRP:AMShell:v1.0@aar">
+  <library name="Gradle: com.github.MadRatSRP:AMShell:1.0@aar">
     <CLASSES>
       <root url="jar://C:/Dependencies/.gradle/caches/transforms-2/files-2.1/95afaf23182ddf3cc87282a3413d39a2/AMShell-v1.0/jars/classes.jar!/" />
       <root url="file://C:/Dependencies/.gradle/caches/transforms-2/files-2.1/95afaf23182ddf3cc87282a3413d39a2/AMShell-v1.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://C:/Dependencies/.gradle/caches/modules-2/files-2.1/com.github.MadRatSRP/AMShell/v1.0/b50418d13e7d954cfff8bfd814b1cc1d2fbc0365/AMShell-v1.0-sources.jar!/" />
+      <root url="jar://C:/Dependencies/.gradle/caches/modules-2/files-2.1/com.github.MadRatSRP/AMShell/1.0/5992949063ef2a185c80242032b071a3d17532c2/AMShell-1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
