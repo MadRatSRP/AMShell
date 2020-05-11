@@ -22,6 +22,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import com.silentknight.amshell.R;
 import com.silentknight.amshell.javax.microedition.lcdui.Canvas;
 import com.silentknight.amshell.javax.microedition.lcdui.Command;
 import com.silentknight.amshell.javax.microedition.lcdui.CommandListener;

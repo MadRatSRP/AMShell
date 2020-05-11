@@ -16,9 +16,9 @@
 
 package com.silentknight.amshell.javax.microedition.lcdui;
 
+import com.silentknight.amshell.R;
 import com.silentknight.amshell.javax.microedition.lcdui.event.SimpleEvent;
 import com.silentknight.amshell.javax.microedition.midlet.MIDlet;
-import com.silentknight.amshell.javax.microedition.shell.R;
 import com.silentknight.amshell.javax.microedition.util.ContextHolder;
 
 import android.app.Activity;
