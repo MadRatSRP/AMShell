@@ -2,7 +2,7 @@ package util;
 
 
 
-import javax.microedition.lcdui.Font;
+import com.silentknight.amshell.javax.microedition.lcdui.Font;
 import java.util.Vector;
 
 /**

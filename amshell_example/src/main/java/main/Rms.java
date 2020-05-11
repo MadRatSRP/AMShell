@@ -4,7 +4,7 @@ package main;
 
 
 import java.io.*;
-import javax.microedition.rms.*;
+import com.silentknight.amshell.javax.microedition.rms.*;
 
 /**
  * Класс сохранения настроек

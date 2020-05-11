@@ -5,7 +5,7 @@ import main.Main;
 import main.Key;
 import main.L;
 import java.io.IOException;
-import javax.microedition.lcdui.*;
+import com.silentknight.amshell.javax.microedition.lcdui.*;
 import midedit.CompositionForm;
 import midedit.MixerModel;
 

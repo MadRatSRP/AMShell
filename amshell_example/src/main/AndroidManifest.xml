@@ -6,13 +6,13 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application android:theme="@style/Theme.Device.Light" android:label="MidEdit" android:icon="@drawable/icon" android:name="main.Main" android:allowClearUserData="true" android:hasCode="true" android:allowBackup="true">
-        <activity android:name="javax.microedition.shell.ConfigActivity">
+        <activity android:name="com.silentknight.amshell.javax.microedition.shell.ConfigActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="javax.microedition.lcdui.Display$ScreenActivity" />
-        <activity android:name="javax.microedition.lcdui.Display$CanvasActivity" />
+        <activity android:name="com.silentknight.amshell.javax.microedition.lcdui.Display$ScreenActivity" />
+        <activity android:name="com.silentknight.amshell.javax.microedition.lcdui.Display$CanvasActivity" />
     </application>
 </manifest>

@@ -1,9 +1,9 @@
 package midedit;
 
 import midedit.media.Composition;
-import javax.microedition.lcdui.*;
+import com.silentknight.amshell.javax.microedition.lcdui.*;
 import java.util.*;
-import javax.microedition.lcdui.List;
+import com.silentknight.amshell.javax.microedition.lcdui.List;
 import main.L;
 import main.P;
 

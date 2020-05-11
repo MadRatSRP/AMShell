@@ -4,7 +4,7 @@ import main.P;
 import main.Main;
 import main.Key;
 import main.L;
-import javax.microedition.lcdui.*;
+import com.silentknight.amshell.javax.microedition.lcdui.*;
 import midedit.Constants;
 
 /**

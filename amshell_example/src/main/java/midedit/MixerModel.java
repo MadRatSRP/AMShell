@@ -7,7 +7,7 @@ import midedit.io.RMSFile;
 import midedit.io.JSR75File;
 import midedit.io.AbstractFile;
 import main.Main;
-import javax.microedition.lcdui.*;
+import com.silentknight.amshell.javax.microedition.lcdui.*;
 import main.L;
 import main.P;
 
@@ -36,7 +36,7 @@ public class MixerModel extends Thread {
             }
             if (crossPlayer == null) {
                 try {
-                    Class.forName("javax.microedition.media.Player");
+                    Class.forName("com.silentknight.amshell.javax.microedition.media.Player");
                     crossPlayer = new JSR135Player();
                 } catch (ClassNotFoundException ex1) {
                 }

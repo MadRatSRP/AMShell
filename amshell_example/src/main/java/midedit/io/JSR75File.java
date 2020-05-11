@@ -2,8 +2,8 @@ package midedit.io;
 
 import java.io.*;
 import java.util.*;
-import javax.microedition.io.*;
-import javax.microedition.io.file.*;
+import com.silentknight.amshell.javax.microedition.io.*;
+import com.silentknight.amshell.javax.microedition.io.file.*;
 import main.L;
 import main.Rms;
 

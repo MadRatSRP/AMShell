@@ -18,7 +18,7 @@ import main.Key;
 import main.L;
 import java.io.DataInputStream;
 import java.util.Vector;
-import javax.microedition.lcdui.*;
+import com.silentknight.amshell.javax.microedition.lcdui.*;
 
 public class TextView extends Canvas {
 

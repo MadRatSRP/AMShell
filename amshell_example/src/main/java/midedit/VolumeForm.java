@@ -3,7 +3,7 @@ package midedit;
 
 import midedit.media.Composition;
 import java.util.*;
-import javax.microedition.lcdui.*;
+import com.silentknight.amshell.javax.microedition.lcdui.*;
 import main.L;
 import main.Main;
 import main.P;

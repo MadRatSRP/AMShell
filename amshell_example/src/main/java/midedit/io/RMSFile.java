@@ -2,7 +2,7 @@ package midedit.io;
 
 import java.io.*;
 import java.util.Vector;
-import javax.microedition.rms.*;
+import com.silentknight.amshell.javax.microedition.rms.*;
 import main.L;
 
 /**

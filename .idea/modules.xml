@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AMShell.iml" filepath="$PROJECT_DIR$/AMShell.iml" group="AMShell" />
+      <module fileurl="file://$PROJECT_DIR$/amshell/amshell.iml" filepath="$PROJECT_DIR$/amshell/amshell.iml" group="AMShell/amshell" />
       <module fileurl="file://$PROJECT_DIR$/amshell_example/amshell_example.iml" filepath="$PROJECT_DIR$/amshell_example/amshell_example.iml" group="AMShell/amshell_example" />
     </modules>
   </component>

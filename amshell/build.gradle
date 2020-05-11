@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+
+android {
+    // Поменяем это
+    compileSdkVersion 15
+
+    buildToolsVersion "29.0.2" // эту строку убираем
+
+    defaultConfig {
+        minSdkVersion 15
+        // И это
+        targetSdkVersion 15
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    def ambilwarnaVersion = "2.0.1"
+
+    // https://github.com/yukuku/ambilwarna
+    implementation "com.github.yukuku:ambilwarna:$ambilwarnaVersion"
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

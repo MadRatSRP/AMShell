@@ -5,8 +5,8 @@ package main;
  * For more info visit http://annimon.com/
  */
 
-import javax.microedition.lcdui.*;
-import javax.microedition.midlet.*;
+import com.silentknight.amshell.javax.microedition.lcdui.*;
+import com.silentknight.amshell.javax.microedition.midlet.*;
 import midedit.CompositionForm;
 import midedit.Constants;
 import midedit.MixerModel;

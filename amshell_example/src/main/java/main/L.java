@@ -2,7 +2,7 @@ package main;
 
 import java.io.*;
 import java.util.Vector;
-import javax.microedition.util.ContextHolder;
+import com.silentknight.amshell.javax.microedition.util.ContextHolder;
 import util.BufDataInputStream;
 
 /**

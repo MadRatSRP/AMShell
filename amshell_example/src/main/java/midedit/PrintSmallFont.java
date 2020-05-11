@@ -1,6 +1,6 @@
 package midedit;
 
-import javax.microedition.lcdui.*;
+import com.silentknight.amshell.javax.microedition.lcdui.*;
 import java.io.*;
 
 /**

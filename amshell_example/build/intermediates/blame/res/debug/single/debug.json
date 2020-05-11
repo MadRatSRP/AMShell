@@ -4,10 +4,6 @@
         "source": "C:\\Android\\Comparision\\AMShell\\amshell_example\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Android\\Comparision\\AMShell\\amshell_example\\build\\intermediates\\res\\merged\\debug\\layout_config_all.xml.flat",
-        "source": "C:\\Android\\Comparision\\AMShell\\amshell_example\\src\\main\\res\\layout\\config_all.xml"
-    },
-    {
         "merged": "C:\\Android\\Comparision\\AMShell\\amshell_example\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher.png.flat",
         "source": "C:\\Android\\Comparision\\AMShell\\amshell_example\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
     },

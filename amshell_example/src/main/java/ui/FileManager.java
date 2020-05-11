@@ -7,7 +7,7 @@ import main.Main;
 import main.Key;
 import main.L;
 import java.util.*;
-import javax.microedition.lcdui.*;
+import com.silentknight.amshell.javax.microedition.lcdui.*;
 import midedit.CompositionForm;
 import midedit.io.AbstractFile;
 import midedit.media.PreviewPlayer;

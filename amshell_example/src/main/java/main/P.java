@@ -1,6 +1,6 @@
 package main;
 
-import javax.microedition.lcdui.*;
+import com.silentknight.amshell.javax.microedition.lcdui.*;
 
 /**
  * Класс параметров и констант

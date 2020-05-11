@@ -4,7 +4,7 @@
  */
 package ui;
 
-import javax.microedition.lcdui.*;
+import com.silentknight.amshell.javax.microedition.lcdui.*;
 import main.Key;
 import main.L;
 import main.P;

@@ -1,7 +1,7 @@
 package ui;
 
 import java.io.IOException;
-import javax.microedition.lcdui.*;
+import com.silentknight.amshell.javax.microedition.lcdui.*;
 import main.*;
 
 /**

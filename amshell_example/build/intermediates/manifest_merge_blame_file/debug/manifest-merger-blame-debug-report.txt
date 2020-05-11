@@ -5,10 +5,10 @@
 5    android:versionName="1" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="10"
+8        android:minSdkVersion="15"
 8-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml
-9        android:targetSdkVersion="23" />
-9-->[com.github.yukuku:ambilwarna:2.0.1] C:\Dependencies\.gradle\caches\transforms-2\files-2.1\1723e2fc18497df90d78ab2c40723e49\ambilwarna-2.0.1\AndroidManifest.xml:10:9-38
+9        android:targetSdkVersion="15" />
+9-->[:amshell] C:\Android\Comparision\AMShell\amshell\build\intermediates\library_manifest\debug\AndroidManifest.xml:9:9-38
 10
 11    <uses-permission android:name="android.permission.VIBRATE" />
 11-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:5:5-66
@@ -35,9 +35,9 @@
 22        android:testOnly="true"
 23        android:theme="@style/Theme.Device.Light" >
 23-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:8:18-59
-24        <activity android:name="javax.microedition.shell.ConfigActivity" >
+24        <activity android:name="com.silentknight.amshell.javax.microedition.shell.ConfigActivity" >
 24-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:9:9-14:20
-24-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:9:19-73
+24-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:9:19-98
 25            <intent-filter>
 25-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:10:13-13:29
 26                <action android:name="android.intent.action.MAIN" />
@@ -49,12 +49,12 @@
 28-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:12:27-74
 29            </intent-filter>
 30        </activity>
-31        <activity android:name="javax.microedition.lcdui.Display$ScreenActivity" />
-31-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:15:9-84
-31-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:15:19-81
-32        <activity android:name="javax.microedition.lcdui.Display$CanvasActivity" />
-32-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:16:9-84
-32-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:16:19-81
+31        <activity android:name="com.silentknight.amshell.javax.microedition.lcdui.Display$ScreenActivity" />
+31-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:15:9-109
+31-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:15:19-106
+32        <activity android:name="com.silentknight.amshell.javax.microedition.lcdui.Display$CanvasActivity" />
+32-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:16:9-109
+32-->C:\Android\Comparision\AMShell\amshell_example\src\main\AndroidManifest.xml:16:19-106
 33    </application>
 34
 35</manifest>

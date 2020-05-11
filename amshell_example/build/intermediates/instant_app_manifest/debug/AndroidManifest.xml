@@ -6,8 +6,8 @@
     android:versionName="1" >
 
     <uses-sdk
-        android:minSdkVersion="10"
-        android:targetSdkVersion="23" />
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
 
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -22,15 +22,15 @@
         android:label="MidEdit"
         android:testOnly="true"
         android:theme="@style/Theme.Device.Light" >
-        <activity android:name="javax.microedition.shell.ConfigActivity" >
+        <activity android:name="com.silentknight.amshell.javax.microedition.shell.ConfigActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="javax.microedition.lcdui.Display$ScreenActivity" />
-        <activity android:name="javax.microedition.lcdui.Display$CanvasActivity" />
+        <activity android:name="com.silentknight.amshell.javax.microedition.lcdui.Display$ScreenActivity" />
+        <activity android:name="com.silentknight.amshell.javax.microedition.lcdui.Display$CanvasActivity" />
     </application>
 
 </manifest>

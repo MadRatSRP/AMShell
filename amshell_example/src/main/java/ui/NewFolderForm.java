@@ -1,9 +1,9 @@
 package ui;
 
 import java.io.IOException;
-import javax.microedition.io.Connector;
-import javax.microedition.io.file.FileConnection;
-import javax.microedition.lcdui.*;
+import com.silentknight.amshell.javax.microedition.io.Connector;
+import com.silentknight.amshell.javax.microedition.io.file.FileConnection;
+import com.silentknight.amshell.javax.microedition.lcdui.*;
 import main.L;
 import main.P;
 

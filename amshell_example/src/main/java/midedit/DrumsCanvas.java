@@ -77,7 +77,7 @@ public class DrumsCanvas extends MixerCanvas {
      *
      * @param g
      */
-    protected void paintScale(javax.microedition.lcdui.Graphics g) {
+    protected void paintScale(com.silentknight.amshell.javax.microedition.lcdui.Graphics g) {
         for (int hh = hBeg; hh < hBeg + rollHeight; hh += hOne) {
             g.fillRect(4, hh, wBeg - 5, 1);
         }

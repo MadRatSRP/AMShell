@@ -2,7 +2,7 @@ package ui;
 
 import main.P;
 import java.util.Calendar;
-import javax.microedition.lcdui.*;
+import com.silentknight.amshell.javax.microedition.lcdui.*;
 
 /*
  * To change this template, choose Tools | Templates

@@ -17,8 +17,5 @@ android {
     }
 }
 dependencies {
-    def ambilwarnaVersion = "2.0.1"
-
-    // https://github.com/yukuku/ambilwarna
-    implementation "com.github.yukuku:ambilwarna:$ambilwarnaVersion"
+    implementation project(":amshell")
 }

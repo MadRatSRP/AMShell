@@ -1,7 +1,7 @@
 package midedit.media;
 
 import midedit.MixerModel;
-import javax.microedition.media.*;
+import com.silentknight.amshell.javax.microedition.media.*;
 import java.io.*;
 
 /**

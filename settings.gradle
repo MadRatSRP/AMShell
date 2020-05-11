@@ -1,1 +1,2 @@
 include ':amshell_example'
+include ':amshell'
