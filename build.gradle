@@ -5,7 +5,12 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.3'
+        // Gradle
+        ext.gradleVersion = '3.6.3'
+
+
+        // Gradle
+        classpath "com.android.tools.build:gradle:$gradleVersion"
     }
 }
 

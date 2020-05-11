@@ -19,7 +19,7 @@ android {
 dependencies {
     //implementation project(":amshell")
 
-    def amshellVersion = "1.0"
+    def amshellVersion = "1.05"
 
     implementation "com.github.MadRatSRP:AMShell:$amshellVersion"
 }
