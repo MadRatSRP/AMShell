@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+	
+	<string name="app_name">PPMPortable</string>
+	
 	<string formatted="false" name="PREF_SCREEN_OPTIONS">Screen options</string>
 	<string formatted="false" name="PREF_SCALE_TO_FIT">Scale to fit</string>
 	<string formatted="false" name="PREF_KEEP_ASPECT_RATIO">Keep aspect ratio</string>
