@@ -32,28 +32,34 @@ public abstract class Displayable
 	private ArrayList<Command> commands;
 	private CommandListener listener;
 	
-	private EventQueue queue;
+	private static EventQueue queue;
+	
+	static
+	{
+		queue = new EventQueue();
+		queue.startProcessing();
+	}
 	
 	public Displayable()
 	{
 		commands = new ArrayList();
 		listener = null;
 		
-		queue = new EventQueue();
+//		queue = new EventQueue();
 	}
 	
 	public void setParentActivity(MicroActivity activity)
 	{
 		parent = activity;
 		
-		if(activity != null)
-		{
-			queue.startProcessing();
-		}
-		else
-		{
-			queue.stopProcessing();
-		}
+//		if(activity != null)
+//		{
+//			queue.startProcessing();
+//		}
+//		else
+//		{
+//			queue.stopProcessing();
+//		}
 		
 		clearDisplayableView();
 	}

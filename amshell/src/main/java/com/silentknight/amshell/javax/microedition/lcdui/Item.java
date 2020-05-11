@@ -98,7 +98,7 @@ public abstract class Item implements View.OnCreateContextMenuListener
 	{
 		public void process()
 		{
-			System.out.println("Changing label from " + Thread.currentThread());
+//			System.out.println("Changing label from " + Thread.currentThread());
 			
 			labelview.setText(label);
 			

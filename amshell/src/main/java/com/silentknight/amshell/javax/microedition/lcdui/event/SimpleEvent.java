@@ -23,6 +23,14 @@ public abstract class SimpleEvent extends Event
 	public void recycle()
 	{
 	}
+	
+	public void enterQueue()
+	{
+	}
+	
+	public void leaveQueue()
+	{
+	}
 
 	public boolean placeableAfter(Event event)
 	{

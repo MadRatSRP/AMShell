@@ -20,19 +20,96 @@ import android.graphics.RectF;
 
 public interface Overlay
 {
+	/**
+	 * Нацелить оверлей на указанный Canvas
+	 * @param canvas Canvas, которому при необходимости следует передавать
+	 * 				 нажатия клавиш и движения указателя
+	 */
 	public void setTarget(Canvas canvas);
 	
+	/**
+	 * Вызывается при изменении размера реального (например, при повороте)
+	 * или виртуального экранов.
+	 * 
+	 * @param screen размер реального экрана устройства
+	 * @param virtualScreen размер виртуального экрана, который доступен мидлету
+	 */
 	public void resize(RectF screen, RectF virtualScreen);
+	
+	/**
+	 * Вызывается при перерисовке экрана.
+	 * См. метод paint() в Canvas.
+	 * 
+	 * @param g Graphics, через который следует вести рисование
+	 */
 	public void paint(Graphics g);
 	
-	public void keyPressed(int keyCode);
-	public void keyRepeated(int keyCode);
-	public void keyReleased(int keyCode);
+	/**
+	 * Вызывается при первом нажатии аппаратной клавиши.
+	 * 
+	 * @param keyCode код нажатой клавиши
+	 * @return true, если нажатие обработано здесь и дальше его передавать не нужно
+	 */
+	public boolean keyPressed(int keyCode);
 	
-	public void pointerPressed(int pointer, float x, float y);
-	public void pointerDragged(int pointer, float x, float y);
-	public void pointerReleased(int pointer, float x, float y);
+	/**
+	 * Вызывается при повторном (2, 3, и т.д.) нажатии аппаратной клавиши.
+	 * 
+	 * @param keyCode код нажатой клавиши
+	 * @return true, если нажатие обработано здесь и дальше его передавать не нужно
+	 */
+	public boolean keyRepeated(int keyCode);
 	
+	/**
+	 * Вызывается при отпускании аппаратной клавиши.
+	 * 
+	 * @param keyCode код нажатой клавиши
+	 * @return true, если нажатие обработано здесь и дальше его передавать не нужно
+	 */
+	public boolean keyReleased(int keyCode);
+	
+	/**
+	 * Вызывается при касании экрана указателем.
+	 * 
+	 * @param pointer индекс указателя (всегда 0, если указатель один;
+	 * 									может быть больше 0, если устройство поддерживает мультитач)
+	 * @param x горизонтальная координата точки касания указателя на экране
+	 * @param y вертикальная координата точки касания указателя на экране
+	 * @return true, если касание обработано здесь и дальше его передавать не нужно
+	 */
+	public boolean pointerPressed(int pointer, float x, float y);
+	
+	/**
+	 * Вызывается при перемещении указателя по экрану.
+	 * 
+	 * @param pointer индекс указателя (всегда 0, если указатель один;
+	 * 									может быть больше 0, если устройство поддерживает мультитач)
+	 * @param x горизонтальная координата точки касания указателя на экране
+	 * @param y вертикальная координата точки касания указателя на экране
+	 * @return true, если движение обработано здесь и дальше его передавать не нужно
+	 */
+	public boolean pointerDragged(int pointer, float x, float y);
+	
+	/**
+	 * Вызывается при отпускании указателя.
+	 * 
+	 * @param pointer индекс указателя (всегда 0, если указатель один;
+	 * 									может быть больше 0, если устройство поддерживает мультитач)
+	 * @param x горизонтальная координата точки касания указателя на экране
+	 * @param y вертикальная координата точки касания указателя на экране
+	 * @return true, если касание обработано здесь и дальше его передавать не нужно
+	 */
+	public boolean pointerReleased(int pointer, float x, float y);
+	
+	/**
+	 * Показать оверлей.
+	 * Вызывается Canvas'ом при первом касании экрана указателем.
+	 */
 	public void show();
+	
+	/**
+	 * Скрыть оверлей.
+	 * Вызывается Canvas'ом при отпускании с экрана последнего указателя.
+	 */
 	public void hide();
 }

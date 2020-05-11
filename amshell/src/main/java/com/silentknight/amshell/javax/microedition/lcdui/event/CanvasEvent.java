@@ -34,6 +34,8 @@ public class CanvasEvent extends Event
 							HIDE_NOTIFY  = 7,
 							SIZE_CHANGED = 8;
 	
+	private static int[] enqueued = new int[9];
+	
 	private Canvas canvas;
 	private int eventType;
 	
@@ -158,6 +160,16 @@ public class CanvasEvent extends Event
 		canvas = null;
 		recycled.push(this);
 	}
+	
+	public void enterQueue()
+	{
+		enqueued[eventType]++;
+	}
+	
+	public void leaveQueue()
+	{
+		enqueued[eventType]--;
+	}
 
 	public boolean placeableAfter(Event event)
 	{
@@ -167,7 +179,8 @@ public class CanvasEvent extends Event
 			{
 				case KEY_REPEATED:
 				case POINTER_DRAGGED:
-					return ((CanvasEvent)event).eventType != eventType;
+					return enqueued[eventType] < 2;
+					// return ((CanvasEvent)event).eventType != eventType;
 			}
 		}
 		

@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	
-	<string name="app_name">PPMPortable</string>
-	
 	<string formatted="false" name="PREF_SCREEN_OPTIONS">Screen options</string>
 	<string formatted="false" name="PREF_SCALE_TO_FIT">Scale to fit</string>
 	<string formatted="false" name="PREF_KEEP_ASPECT_RATIO">Keep aspect ratio</string>
@@ -40,4 +37,8 @@
 	<string formatted="false" name="PREF_LANGUAGE">Language: %A</string>
 	<string formatted="false" name="PREF_MISC">Misc options</string>
 	<string formatted="false" name="EDIT_MANIFEST_CMD">Edit manifest</string>
+	<string formatted="false" name="FORCE_CLOSE_CONFIRMATION">Force-closing the application may result in data loss or even break it completely!\nProceed?</string>
+	<string formatted="false" name="CONFIRMATION_REQUIRED">Confirmation required</string>
+	<string formatted="false" name="YES_CMD">Yes</string>
+	<string formatted="false" name="NO_CMD">No</string>
 </resources>

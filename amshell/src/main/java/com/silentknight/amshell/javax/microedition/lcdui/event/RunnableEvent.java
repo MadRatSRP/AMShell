@@ -54,6 +54,14 @@ public class RunnableEvent extends Event
 		recycled.push(this);
 	}
 	
+	public void enterQueue()
+	{
+	}
+	
+	public void leaveQueue()
+	{
+	}
+	
 	public boolean placeableAfter(Event event)
 	{
 		return true;

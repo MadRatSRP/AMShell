@@ -176,6 +176,9 @@ public class ContextHolder
 		return requestString.hashCode() & 0x7FFFFFFF;
 	}
 	
+	/**
+	 * Свернуться в фоновый режим.
+	 */
 	public static void notifyPaused()
 	{
 		if(currentActivity != null)
@@ -184,6 +187,9 @@ public class ContextHolder
 		}
 	}
 	
+	/**
+	 * Закрыть все Activity и завершить процесс, в котором они выполнялись.
+	 */
 	public static void notifyDestroyed()
 	{
 		MicroActivity activity;

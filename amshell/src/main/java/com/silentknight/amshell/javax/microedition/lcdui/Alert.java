@@ -110,7 +110,11 @@ public class Alert extends Screen implements Runnable, DialogInterface.OnClickLi
 		
 		builder.setTitle(getTitle());
 		builder.setMessage(getString());
-		builder.setIcon(new BitmapDrawable(getImage().getBitmap()));
+		
+		if(image != null)
+		{
+			builder.setIcon(new BitmapDrawable(image.getBitmap()));
+		}
 		
 		dialog = builder.create();
 		
@@ -131,13 +135,11 @@ public class Alert extends Screen implements Runnable, DialogInterface.OnClickLi
 			{
 				positive = i;
 			}
-			
-			if(negative < 0 && cmdtype == Command.CANCEL)
+			else if(negative < 0 && cmdtype == Command.CANCEL)
 			{
 				negative = i;
 			}
-			
-			if(neutral < 0)
+			else if(neutral < 0)
 			{
 				neutral = i;
 			}

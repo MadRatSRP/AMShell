@@ -66,6 +66,14 @@ public class LayoutEvent extends Event
 		
 		recycled.push(this);
 	}
+	
+	public void enterQueue()
+	{
+	}
+	
+	public void leaveQueue()
+	{
+	}
 
 	public boolean placeableAfter(Event event)
 	{

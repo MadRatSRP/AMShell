@@ -829,18 +829,35 @@ public class VirtualKeyboard implements Overlay, Runnable
 		}
 	}
 	
-	public void pointerPressed(int pointer, float x, float y)
+	/**
+	 * Проверить, было ли нами обработано нажатие указателя.
+	 * 
+	 * Считается, что не было, если оно пришлось на виртуальный экран:
+	 * в этом случае оно достанется и мидлету.
+	 * А вот нажатия вне виртуального экрана мидлету
+	 * не передаются в целях оптимизации.
+	 * 
+	 * @param x координаты нажатия
+	 * @param y координаты нажатия
+	 * @return true, если нажатие пришлось на виртуальный экран мидлета
+	 */
+	public boolean checkPointerHandled(float x, float y)
+	{
+		return !virtualScreen.contains(x, y);
+	}
+	
+	public boolean pointerPressed(int pointer, float x, float y)
 	{
 		if(skip)
 		{
-			return;
+			return checkPointerHandled(x, y);
 		}
 		
 		if(layoutEditMode == LAYOUT_EOF)
 		{
 			if(pointer > associatedKeys.length)
 			{
-				return;
+				return checkPointerHandled(x, y);
 			}
 			
 			for(int i = 0; i < keypad.length; i++)
@@ -914,20 +931,22 @@ public class VirtualKeyboard implements Overlay, Runnable
 			
 			prevScale = keyScales[editedIndex];
 		}
+		
+		return checkPointerHandled(x, y);
 	}
 	
-	public void pointerDragged(int pointer, float x, float y)
+	public boolean pointerDragged(int pointer, float x, float y)
 	{
 		if(skip)
 		{
-			return;
+			return checkPointerHandled(x, y);
 		}
 		
 		if(layoutEditMode == LAYOUT_EOF)
 		{
 			if(pointer > associatedKeys.length)
 			{
-				return;
+				return checkPointerHandled(x, y);
 			}
 			
 			if(associatedKeys[pointer] == null)
@@ -1033,21 +1052,23 @@ public class VirtualKeyboard implements Overlay, Runnable
 			
 			repaint();
 		}
+		
+		return checkPointerHandled(x, y);
 	}
 	
-	public void pointerReleased(int pointer, float x, float y)
+	public boolean pointerReleased(int pointer, float x, float y)
 	{
 		if(skip)
 		{
 			skip = false;
-			return;
+			return checkPointerHandled(x, y);
 		}
 		
 		if(layoutEditMode == LAYOUT_EOF)
 		{
 			if(pointer > associatedKeys.length)
 			{
-				return;
+				return checkPointerHandled(x, y);
 			}
 			
 			if(associatedKeys[pointer] != null)
@@ -1071,6 +1092,8 @@ public class VirtualKeyboard implements Overlay, Runnable
 		{
 			editedIndex = -1;
 		}
+		
+		return checkPointerHandled(x, y);
 	}
 	
 	public void show()
@@ -1137,9 +1160,13 @@ public class VirtualKeyboard implements Overlay, Runnable
 		}
 	}
 
-	public void keyPressed(int keyCode)
+	public boolean keyPressed(int keyCode)
 	{
-		if(keyCode != layoutEditKeyCode)
+		if(keyCode == layoutEditKeyCode)
+		{
+			return true;
+		}
+		else
 		{
 			for(int i = 0; i < keypad.length; i++)
 			{
@@ -1148,40 +1175,51 @@ public class VirtualKeyboard implements Overlay, Runnable
 					keypad[i].setSelected(true);
 				}
 			}
+			
+			return false;
 		}
 	}
 
-	public void keyRepeated(int keyCode)
+	public boolean keyRepeated(int keyCode)
 	{
-		if(keyCode == layoutEditKeyCode && !layoutEditKeyRepeated)
+		if(keyCode == layoutEditKeyCode)
 		{
-			layoutEditKeyRepeated = true;
-			
-			setLayoutEditMode(LAYOUT_EOF);
-			resetLayout(layoutVariant);
-			
-			if(++layoutVariant >= 2)
+			if(!layoutEditKeyRepeated)
 			{
-				layoutVariant = 0;
+				layoutEditKeyRepeated = true;
+				
+				setLayoutEditMode(LAYOUT_EOF);
+				resetLayout(layoutVariant);
+				
+				if(++layoutVariant >= 2)
+				{
+					layoutVariant = 0;
+				}
+				
+				for(int group = 0; group < keyScaleGroups.length; group++)
+				{
+					resizeKeyGroup(group);
+				}
+				
+				snapKeys();
+				
+				// show();
 			}
 			
-			for(int group = 0; group < keyScaleGroups.length; group++)
-			{
-				resizeKeyGroup(group);
-			}
-			
-			snapKeys();
-			
-			// show();
+			return true;
 		}
+		
+		return false;
 	}
 
-	public void keyReleased(int keyCode)
+	public boolean keyReleased(int keyCode)
 	{
 		if(keyCode == layoutEditKeyCode)
 		{
 			layoutEditKeyRepeated = false;
 			cycleLayoutEditMode();
+			
+			return true;
 		}
 		else
 		{
@@ -1192,6 +1230,8 @@ public class VirtualKeyboard implements Overlay, Runnable
 					keypad[i].setSelected(false);
 				}
 			}
+			
+			return false;
 		}
 	}
 	

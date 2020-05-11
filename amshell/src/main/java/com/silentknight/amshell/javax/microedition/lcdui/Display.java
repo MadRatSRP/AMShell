@@ -55,6 +55,12 @@ public class Display
 			super.onResume();
 			Display.getDisplay(null).changeActivity(this);
 		}
+		
+		public void onStop()
+		{
+			Display.getDisplay(null).activityStopped(this);
+			super.onStop();
+		}
 	}
 	
 	public static class CanvasActivity extends MicroActivity
@@ -69,6 +75,12 @@ public class Display
 		{
 			super.onResume();
 			Display.getDisplay(null).changeActivity(this);
+		}
+		
+		public void onStop()
+		{
+			Display.getDisplay(null).activityStopped(this);
+			super.onStop();
 		}
 	}
 	
@@ -160,9 +172,15 @@ public class Display
 		current = disp;
 	}
 	
-	private void changeActivity(MicroActivity activity)
+	private void changeActivity(MicroActivity subject)
 	{
-		this.activity = activity;
+		if(subject == activity)
+		{
+			context.startApp();
+		}
+		
+		activity = subject;
+		
 		showCurrent();
 	}
 	
@@ -208,6 +226,19 @@ public class Display
 			{
 				context.startActivity(ScreenActivity.class);
 			}
+		}
+	}
+	
+	private void activityStopped(MicroActivity subject)
+	{
+		if(subject == this.activity)
+		{
+			/*
+			 * ...а спрятали-то наше текущее Activity!
+			 * Нужно сообщить об этом мидлету...
+			 */
+			
+			context.callPauseApp();
 		}
 	}
 	
@@ -326,4 +357,9 @@ public class Display
 	{
 		return Integer.MAX_VALUE;
 	}
+	
+//	private void out(String text)
+//	{
+//		System.out.println("[" + getClass().getName() + "] " + text);
+//	}
 }

@@ -16,18 +16,22 @@
 
 package com.silentknight.amshell.javax.microedition.lcdui;
 
+import com.silentknight.amshell.javax.microedition.lcdui.event.SimpleEvent;
+import com.silentknight.amshell.javax.microedition.midlet.MIDlet;
+import com.silentknight.amshell.javax.microedition.shell.R;
+import com.silentknight.amshell.javax.microedition.util.ContextHolder;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import com.silentknight.amshell.javax.microedition.lcdui.event.SimpleEvent;
-import com.silentknight.amshell.javax.microedition.util.ContextHolder;
 
 public class MicroActivity extends Activity implements Handler.Callback
 {
@@ -153,6 +157,86 @@ public class MicroActivity extends Activity implements Handler.Callback
 		super.onDestroy();
 	}
 	
+	public boolean onKeyDown(int keyCode, KeyEvent event)
+	{
+		if(keyCode == KeyEvent.KEYCODE_BACK)
+		{
+			event.startTracking();
+			return true;
+		}
+		
+		return super.onKeyDown(keyCode, event);
+	}
+	
+	public boolean onKeyUp(int keyCode, KeyEvent event)
+	{
+		if(keyCode == KeyEvent.KEYCODE_BACK && event.isTracking() && !event.isCanceled())
+		{
+			Runnable r = new Runnable()
+			{
+				public void run()
+				{
+					moveTaskToBack(true);
+				}
+			};
+			
+			(new Thread(r)).start();
+			
+			return true;
+		}
+		
+		return super.onKeyUp(keyCode, event);
+	}
+	
+	public boolean onKeyLongPress(int keyCode, KeyEvent event)
+	{
+		if(keyCode == KeyEvent.KEYCODE_BACK)
+		{
+			CommandListener cl = new CommandListener()
+			{
+				public void commandAction(Command c, Displayable dp)
+				{
+					if(c.getCommandType() == Command.OK)
+					{
+						Runnable r = new Runnable()
+						{
+							public void run()
+							{
+								try
+								{
+									((MIDlet)(MicroActivity.this.getApplication())).callDestroyApp(true);
+								}
+								catch(Throwable ex)
+								{
+									ex.printStackTrace();
+								}
+								
+								ContextHolder.notifyDestroyed();
+							}
+						};
+						
+						(new Thread(r)).start();
+					}
+				}
+			};
+			
+			Alert alert = new Alert(getString(R.string.CONFIRMATION_REQUIRED),
+									getString(R.string.FORCE_CLOSE_CONFIRMATION),
+									null, AlertType.CONFIRMATION);
+			
+			alert.addCommand(new Command(getString(R.string.YES_CMD), Command.OK, 1));
+			alert.addCommand(new Command(getString(R.string.NO_CMD), Command.CANCEL, 2));
+			alert.setCommandListener(cl);
+			
+			Display dsp = Display.getDisplay(null);
+			dsp.setCurrent(alert, dsp.getCurrent());
+			
+			return true;
+		}
+		
+		return super.onKeyLongPress(keyCode, event);
+	}
+	
 	public void onActivityResult(int requestCode, int resultCode, Intent data)
 	{
 		ContextHolder.notifyOnActivityResult(requestCode, resultCode, data);
@@ -222,5 +306,10 @@ public class MicroActivity extends Activity implements Handler.Callback
 //	public void setContentView(View view)
 //	{
 //		getHandler().obtainMessage(SET_CONTENT_VIEW, view).sendToTarget();
+//	}
+	
+//	private void out(String text)
+//	{
+//		System.out.println("[" + getClass().getName() + "] " + text);
 //	}
 }

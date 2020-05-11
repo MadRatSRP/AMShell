@@ -37,4 +37,8 @@
 	<string formatted="false" name="PREF_LANGUAGE">Язык: %A</string>
 	<string formatted="false" name="PREF_MISC">Прочие параметры</string>
 	<string formatted="false" name="EDIT_MANIFEST_CMD">Редакт. манифест</string>
+	<string formatted="false" name="FORCE_CLOSE_CONFIRMATION">Принудительное закрытие приложения может привести к потере данных или даже полной его неработоспособности!\nПродолжить?</string>
+	<string formatted="false" name="CONFIRMATION_REQUIRED">Требуется подтверждение</string>
+	<string formatted="false" name="YES_CMD">Да</string>
+	<string formatted="false" name="NO_CMD">Нет</string>
 </resources>
